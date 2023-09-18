@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="firstNumber">Enter First Number:</label>
+        <input type="number" id="firstNumber" value="3">
+    </div>
+    <div>
+        <label for="secondNumber">
+            Enter Second Number:
+        </label>
+        <input type="number" id="secondNumber" value="4">
+    </div>
+    <div>
+        <button onclick="addNumbers()">Calculate</button>
+    </div>
+    <div id="result">Result:</div>
+    <script>
+        function addNumbers(){
+            var firstNumber= parseFloat(document.getElementById("firstNumber").value);
+            var secondNumber=parseFloat(document.getElementById("secondNumber").value);
+            var sum=firstNumber+secondNumber;
+            document.getElementById("result").textContent="Result:"+sum;
+
+        }
+    </script>
+</body>
+</html>
